@@ -1,0 +1,21 @@
+group 'simple-jackson'
+version '1.0.0'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.6.1'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.+'
+    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.+'
+    compile 'org.springframework:spring-test:4.2.1.RELEASE'
+    compile 'org.springframework:spring-context:4.2.1.RELEASE'
+    compile 'org.springframework.data:spring-data-mongodb:1.7.2.RELEASE'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
