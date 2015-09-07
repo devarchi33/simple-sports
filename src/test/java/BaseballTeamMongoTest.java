@@ -9,7 +9,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * Created by donghoon on 15. 9. 7..
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"file:src/main/resources/applicationContext.xml", "file:src/main/resources/mongoApplicationContext.xml"})
+@ContextConfiguration(locations = {"file:src/main/web/WEB-INF/config/coreApplicationContext.xml", "file:src/main/web/WEB-INF/config/mongoApplicationContext.xml"})
 public class BaseballTeamMongoTest {
 
     @Autowired

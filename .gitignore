@@ -1,5 +1,7 @@
 .idea/
 .gradle/
 build/
+bower_components/
+out/
 *.iml
 *.log

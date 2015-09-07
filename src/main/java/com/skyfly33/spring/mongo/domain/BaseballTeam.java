@@ -12,6 +12,9 @@ public class BaseballTeam {
     private int draw;
     private int lose;
 
+    public BaseballTeam() {
+    }
+
     public BaseballTeam(int win, int draw, int lose) {
         this.win = win;
         this.draw = draw;

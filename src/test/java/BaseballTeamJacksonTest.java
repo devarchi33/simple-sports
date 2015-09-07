@@ -14,7 +14,7 @@ import java.io.File;
  * Created by donghoon on 15. 9. 5..
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"file:src/main/resources/applicationContext.xml"})
+@ContextConfiguration(locations = {"file:src/main/web/WEB-INF/config/coreApplicationContext.xml", "file:src/main/web/WEB-INF/config/mongoApplicationContext.xml"})
 public class BaseballTeamJacksonTest {
 
     Logger logger = LoggerFactory.getLogger(BaseballTeamJacksonTest.class);
