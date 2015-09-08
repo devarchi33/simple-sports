@@ -8,6 +8,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "baseball")
 public class BaseballTeam {
 
+    private String name;
     private int win;
     private int draw;
     private int lose;
@@ -19,6 +20,14 @@ public class BaseballTeam {
         this.win = win;
         this.draw = draw;
         this.lose = lose;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getWin() {
